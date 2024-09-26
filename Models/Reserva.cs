@@ -16,7 +16,7 @@ namespace DesafioProjetoHospedagem.Models
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
             // TODO: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
-            if (Suite.Capacidade <= hospedes.Count())
+            if (Suite.Capacidade >= hospedes.Count())
             {
                 Hospedes = hospedes;
             }
